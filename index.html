@@ -3,125 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio — Landings Juigalpa | CodeArtbyEmile</title>
+  <title>Portafolio — Equipo 2 | UNAN CUR Chontales</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: 'Segoe UI', system-ui, sans-serif; }
     .card:hover .card-arrow { transform: translateX(4px); }
   </style>
 </head>
-<body class="bg-gray-950 text-white min-h-screen">
+<body class="bg-gray-950 text-white min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="border-b border-gray-800 px-6 py-5">
-    <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <div>
-        <span class="text-gray-400 text-sm font-semibold">Equipo 2</span>
-        <h1 class="text-white font-bold text-lg leading-tight">Landings — Negocios de Juigalpa</h1>
-        <p class="text-gray-500 text-xs mt-0.5">Emily Espinoza · Cristhel Soza · Alex Alvarez</p>
+  <header class="border-b border-gray-800 px-6 py-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <p class="text-indigo-400 text-xs font-semibold tracking-widest uppercase mb-1">UNAN CUR Chontales</p>
+          <h1 class="text-white font-extrabold text-3xl leading-tight">Equipo 2</h1>
+          <p class="text-gray-400 text-sm mt-1">Landings — Negocios de Juigalpa, Chontales</p>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="bg-indigo-950 border border-indigo-800 text-indigo-300 text-xs font-medium px-3 py-1.5 rounded-full">
+            Desarrollo Web
+          </span>
+          <span class="bg-gray-900 border border-gray-700 text-gray-400 text-xs font-medium px-3 py-1.5 rounded-full">
+            2026
+          </span>
+        </div>
       </div>
-      <span class="hidden sm:inline-block bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">
-        Vite · React · Tailwind
-      </span>
     </div>
   </header>
 
   <!-- Main -->
-  <main class="max-w-5xl mx-auto px-6 py-16">
+  <main class="max-w-5xl mx-auto px-6 py-14 w-full flex-1">
 
-    <div class="mb-12">
-      <p class="text-gray-400 text-base max-w-lg">
-        3 landing pages para negocios reales de Juigalpa, Chontales, Nicaragua.
-        Cada una con diseño único, animaciones y secciones adaptadas al rubro.
-      </p>
-    </div>
+    <!-- Projects label -->
+    <p class="text-gray-500 text-xs font-semibold tracking-widest uppercase mb-6">Proyectos</p>
 
     <!-- Cards grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
 
       <!-- Card 1: Agropecuaria -->
       <a href="https://emilyespinoza2023.github.io/agropecuaria-chontales" target="_blank" rel="noopener noreferrer"
-        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-green-700 hover:bg-gray-900/80 transition-all duration-200 flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <div class="w-12 h-12 bg-green-950 border border-green-800 rounded-xl flex items-center justify-center text-2xl">
+        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-green-700 transition-all duration-200 flex flex-col">
+        <div class="flex items-center justify-between mb-5">
+          <div class="w-11 h-11 bg-green-950 border border-green-900 rounded-xl flex items-center justify-center text-xl">
             🐄
           </div>
-          <svg class="card-arrow text-gray-600 group-hover:text-green-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="card-arrow text-gray-700 group-hover:text-green-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
           </svg>
         </div>
         <div class="flex-1">
-          <h2 class="text-white font-bold text-lg mb-1">Agropecuaria El Corral</h2>
-          <p class="text-gray-500 text-sm mb-4 leading-relaxed">
-            Ganado bovino, insumos agropecuarios y servicio veterinario en Juigalpa, Chontales.
-          </p>
+          <h2 class="text-white font-bold text-base mb-1">Agropecuaria El Corral</h2>
+          <p class="text-gray-500 text-sm leading-relaxed">Juigalpa, Chontales</p>
         </div>
-        <div class="flex flex-wrap gap-2 mt-2">
-          <span class="bg-green-950 text-green-400 text-xs px-2 py-1 rounded-md border border-green-900">Ganadería</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">React</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">Tailwind</span>
+        <div class="mt-4 pt-4 border-t border-gray-800">
+          <span class="text-green-500 text-xs font-semibold">Ganadería &amp; Insumos</span>
         </div>
       </a>
 
       <!-- Card 2: Restaurante -->
       <a href="https://emilyespinoza2023.github.io/restaurante-chontales" target="_blank" rel="noopener noreferrer"
-        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-red-800 hover:bg-gray-900/80 transition-all duration-200 flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <div class="w-12 h-12 bg-red-950 border border-red-900 rounded-xl flex items-center justify-center text-2xl">
+        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-red-800 transition-all duration-200 flex flex-col">
+        <div class="flex items-center justify-between mb-5">
+          <div class="w-11 h-11 bg-red-950 border border-red-900 rounded-xl flex items-center justify-center text-xl">
             🍽️
           </div>
-          <svg class="card-arrow text-gray-600 group-hover:text-red-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="card-arrow text-gray-700 group-hover:text-red-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
           </svg>
         </div>
         <div class="flex-1">
-          <h2 class="text-white font-bold text-lg mb-1">Restaurante La Chontaleña</h2>
-          <p class="text-gray-500 text-sm mb-4 leading-relaxed">
-            Comida típica nicaragüense: baho, nacatamales y los mejores sabores de Chontales.
-          </p>
+          <h2 class="text-white font-bold text-base mb-1">Restaurante La Chontaleña</h2>
+          <p class="text-gray-500 text-sm leading-relaxed">Juigalpa, Chontales</p>
         </div>
-        <div class="flex flex-wrap gap-2 mt-2">
-          <span class="bg-red-950 text-red-400 text-xs px-2 py-1 rounded-md border border-red-900">Restaurante</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">React</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">Tailwind</span>
+        <div class="mt-4 pt-4 border-t border-gray-800">
+          <span class="text-red-500 text-xs font-semibold">Comida Típica Nicaragüense</span>
         </div>
       </a>
 
       <!-- Card 3: Clínica -->
       <a href="https://emilyespinoza2023.github.io/clinica-juigalpa" target="_blank" rel="noopener noreferrer"
-        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-800 hover:bg-gray-900/80 transition-all duration-200 flex flex-col">
-        <div class="flex items-center justify-between mb-4">
-          <div class="w-12 h-12 bg-blue-950 border border-blue-900 rounded-xl flex items-center justify-center text-2xl">
+        class="card group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-800 transition-all duration-200 flex flex-col">
+        <div class="flex items-center justify-between mb-5">
+          <div class="w-11 h-11 bg-blue-950 border border-blue-900 rounded-xl flex items-center justify-center text-xl">
             ⚕️
           </div>
-          <svg class="card-arrow text-gray-600 group-hover:text-blue-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="card-arrow text-gray-700 group-hover:text-blue-500 transition-all duration-200 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
           </svg>
         </div>
         <div class="flex-1">
-          <h2 class="text-white font-bold text-lg mb-1">Clínica San Lucas</h2>
-          <p class="text-gray-500 text-sm mb-4 leading-relaxed">
-            Atención médica especializada con 8 especialidades en el corazón de Juigalpa.
-          </p>
+          <h2 class="text-white font-bold text-base mb-1">Clínica San Lucas</h2>
+          <p class="text-gray-500 text-sm leading-relaxed">Juigalpa, Chontales</p>
         </div>
-        <div class="flex flex-wrap gap-2 mt-2">
-          <span class="bg-blue-950 text-blue-400 text-xs px-2 py-1 rounded-md border border-blue-900">Salud</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">React</span>
-          <span class="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">Tailwind</span>
+        <div class="mt-4 pt-4 border-t border-gray-800">
+          <span class="text-blue-500 text-xs font-semibold">Atención Médica Especializada</span>
         </div>
       </a>
 
     </div>
+
+    <!-- Team section -->
+    <p class="text-gray-500 text-xs font-semibold tracking-widest uppercase mb-6">Integrantes</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex items-center gap-4">
+        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">EE</div>
+        <div class="min-w-0">
+          <p class="text-white font-semibold text-sm">Emily Espinoza</p>
+          <a href="https://github.com/EmilyEspinoza2023" target="_blank" rel="noopener noreferrer"
+            class="text-gray-500 hover:text-indigo-400 text-xs transition-colors truncate block">
+            @EmilyEspinoza2023
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex items-center gap-4">
+        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">CS</div>
+        <div class="min-w-0">
+          <p class="text-white font-semibold text-sm">Cristhel Soza</p>
+          <span class="text-gray-600 text-xs">GitHub pendiente</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 flex items-center gap-4">
+        <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">AA</div>
+        <div class="min-w-0">
+          <p class="text-white font-semibold text-sm">Alex Alvarez</p>
+          <span class="text-gray-600 text-xs">GitHub pendiente</span>
+        </div>
+      </div>
+
+    </div>
+
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-800 px-6 py-6 mt-8">
+  <footer class="border-t border-gray-800 px-6 py-5">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <span class="text-gray-600 text-sm">© 2026 Equipo 2</span>
-      <a href="https://github.com/CodeArtbyemile" target="_blank" rel="noopener noreferrer"
-        class="text-gray-500 hover:text-white text-sm transition-colors">
-        GitHub →
-      </a>
+      <span class="text-gray-700 text-xs">© 2026 Equipo 2 — UNAN CUR Chontales</span>
+      <span class="text-gray-700 text-xs">Ingeniería en Sistemas de Información</span>
     </div>
   </footer>
 
